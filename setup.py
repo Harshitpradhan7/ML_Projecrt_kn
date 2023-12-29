@@ -1,7 +1,9 @@
+# With the help of setup.py we can create our machine learning model as a Package. So, we can import it in our project or anyone else can also.
+
 from setuptools import find_packages, setup
 from typing import List
 
-HYPHEN_E_DOT ='-e .' #contant created
+HYPHEN_E_DOT ='-e .' #constant created
 
 def get_requirements(file_path:str)->List[str]:
     '''
@@ -17,7 +19,7 @@ def get_requirements(file_path:str)->List[str]:
             requirements.remove(HYPHEN_E_DOT)
             
     return requirements
-
+        
 setup(
 name='DS project',
 version='0.0.1',
